@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&family=Oswald:wght@300&display=swap">
+</head>
+<body>
+    <header id="header">
+        <nav id="menu">
+            <div id="logo"><h1> < / Emissor > Lindão ! </h1></div>
+            
+            <ul id="menu-lista">
+                <li id="menu-item">
+                    <a href="#" id="menu-link">Home</a>
+                </li>
+                <li id="menu-item">
+                    <a href="#" id="menu-link">Sobre</a>
+                </li>
+                <li id="menu-item">
+                    <a href="#" id="menu-link">Contato</a>
+                </li>
+                <li id="menu-item">
+                    <a href="#" id="menu-link">Parcerias</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav id="menu-mobile">
+            <div id="logoM">
+                <h1> < / Emissor > Lindão</h1>
+                <img src="./menu.svg" alt="ícone para abrir o menu" id="menu-icon" onclick="menuShow()">
+                <img src="./close.svg" alt="ícone para abrir o menu" id="close-icon" onclick="menuClose()">
+            </div>
+
+            <ul id="menuM-lista">
+                <li id="menuM-item">
+                    <a href="#" id="menuM-link">Home</a>
+                </li>
+                <li id="menuM-item">
+                    <a href="#" id="menuM-link">Sobre</a>
+                </li>
+                <li id="menuM-item">
+                    <a href="#" id="menuM-link">Contato</a>
+                </li>
+                <li id="menuM-item">
+                    <a href="#" id="menuM-link">Parcerias</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="conteudo">
+        <div id="noticia">
+            <h2>Notícia 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, nemo quam! Excepturi quaerat laboriosam beatae velit commodi dolore nisi error obcaecati doloribus dolores, cumque atque fugiat dicta incidunt reprehenderit voluptatem!</p>
+        </div>
+        <div id="noticia">
+            <h2>Notícia 2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quisquam deleniti pariatur, debitis magnam nostrum iure accusamus earum exercitationem repudiandae in animi omnis, placeat quia. Inventore delectus deserunt blanditiis in.</p>
+        </div>
+        <div id="noticia">
+            <h2>Notícia 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto labore totam quam voluptas fuga culpa magni ducimus ea nemo aliquam temporibus amet suscipit, assumenda eveniet dolorum mollitia explicabo vitae! Laborum?</p>
+        </div>
+        <div id="noticia">
+            <h2>Notícia 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam officia a dolorum reprehenderit ad possimus, distinctio accusamus magni vero voluptas optio libero error fugit nisi omnis vitae magnam mollitia ipsam!</p>
+        </div>
+    </section>
+    
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #2E2828;
+    font: normal 12pt Arial;
+}
+
+/*Menu*/
+
+header{
+    background-color: #503A3A;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.329);
+}
+
+#menu{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: auto;
+    align-items: center;
+    margin-right: 40px;
+}
+
+#logo{
+    color: #FEF4F4;
+    margin-left: 40px;
+    font-family: 'League Spartan', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+#logo:hover{
+    color: #F65151;
+    transition: 500ms;
+    text-decoration: underline;
+}
+
+#menu-lista{
+    display: flex;
+    list-style: none;
+}
+
+
+#menu-link{
+    text-decoration: none;
+    color: #FEF4F4;
+    padding: 17px;
+    letter-spacing: 1.5px;
+}
+
+#menu-link:hover{
+    transition: 500ms;
+    background-color: #F65151;
+    border-radius: 5px;
+}
+/*Menu - fim*/
+
+/*Menu Mobile*/
+
+header{
+    width: 100%;
+}
+
+#menu-mobile{
+    display: none;
+}
+@media screen and (max-width:767px){
+    #menu{
+        display: none;
+    }
+
+    #menu-mobile{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        width: 95%;
+    }
+    
+    #logoM{
+        width: 95%;
+        color: #FEF4F4;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-family: 'League Spartan', sans-serif;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    
+    #menu-icon{
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    #close-icon{
+        display: none;
+        cursor: pointer;
+    }
+    
+    #menu-icon:hover{
+        color: #F65151;
+    }
+    
+    #menuM-lista{
+        display: none;
+        flex-direction: column;
+        list-style: none;
+        width: 100%;
+    }
+    
+    #menuM-item{
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #474545;
+    }
+    
+    #menuM-item:hover{
+        transition: 500ms;
+        background-color: #F65151;
+        border-bottom: none;
+    }
+    
+    #menuM-link{
+        color: #FEF4F4;
+        text-decoration: none;
+        letter-spacing: 1.5px;
+    }
+}
+
+/*Menu Mobile - fim*/
+
+/*Conteúdo*/
+
+#conteudo{
+    color: #FEF4F4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    height: 500px;
+}
+
+#noticia{
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 2px solid #474545;
+    border-radius: 10px;
+}
+
+@media screen and (min-width:767px){
+    #conteudo{
+        display: flex;
+        flex-direction: row;
+        
+    }
+}
